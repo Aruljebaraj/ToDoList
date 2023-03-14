@@ -5,12 +5,14 @@ import 'package:provider/provider.dart';
 import 'package:todolist/provider/auth_provider.dart';
 import 'package:todolist/provider/todo_list_provider.dart';
 import 'package:todolist/screens/home_screen.dart';
+import 'package:todolist/screens/login_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -31,8 +33,8 @@ class MyApp extends StatelessWidget {
       ],
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-       // theme: ThemeData.dark(),
-        home: HomeScreen(),
+        // theme: ThemeData.dark(),
+        home: LoginScreen(),
       ),
     );
   }
