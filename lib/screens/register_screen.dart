@@ -102,8 +102,8 @@ class RegisterScreen extends StatelessWidget {
                                   password.text,
                                   context,
                                 );
-                                // email.clear();
-                                // password.clear();
+                                email.clear();
+                                password.clear();
                               },
                               style: ButtonStyle(
                                 elevation: MaterialStateProperty.all(
