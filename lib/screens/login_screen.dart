@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todolist/screens/register_screen.dart';
@@ -43,12 +41,11 @@ class LoginScreen extends StatelessWidget {
                           "assets/image/logo.png",
                           height: 150,
                         ),
-
                         TextFormField(
                           keyboardType: TextInputType.emailAddress,
                           controller: email,
-                          decoration:
-                              const InputDecoration(label: Text('Enter e-mail')),
+                          decoration: const InputDecoration(
+                              label: Text('Enter e-mail')),
                         ),
                         const SizedBox(
                           height: 10,
@@ -92,7 +89,8 @@ class LoginScreen extends StatelessWidget {
                                   'Have no account ? ',
                                 ),
                                 Text('Register',
-                                    style: TextStyle(fontWeight: FontWeight.w900))
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.w900))
                               ],
                             )
                             // TextButton(

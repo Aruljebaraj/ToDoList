@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todolist/provider/auth_provider.dart';
 import 'package:todolist/provider/todo_list_provider.dart';
+import 'package:todolist/screens/add_todo.dart';
 import 'package:todolist/screens/home_screen.dart';
 import 'package:todolist/screens/login_screen.dart';
 
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
         // theme: ThemeData.dark(),
-        home: LoginScreen(),
+        home:LoginScreen(),
       ),
     );
   }
